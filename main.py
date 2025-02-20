@@ -6,7 +6,7 @@ def _set_state():
 
 
 @st.fragment
-def _frag_test():
+def _fragment_test():
     button_cols = st.sidebar.columns(2)
     with button_cols[0]:
         st.button("Test", on_click=_set_state)
@@ -15,7 +15,7 @@ def _frag_test():
 
 
 def main():
-    _frag_test()
+    _fragment_test()
 
 
 if __name__ == "__main__":
