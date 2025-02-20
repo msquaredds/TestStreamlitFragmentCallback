@@ -7,7 +7,7 @@ def _set_state():
 
 def main():
     st.button("Test", on_click=_set_state)
-    if if 'test' in st.session_state and st.session_state.test:
+    if 'test' in st.session_state and st.session_state.test:
         st.write("Test is True")
 
 
