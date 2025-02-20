@@ -7,7 +7,9 @@ def _set_state():
 
 @st.fragment
 def _frag_test():
-    st.button("Test", on_click=_set_state)
+    button_cols = st.sidebar.columns(2)
+    with button_cols[0]:
+        st.button("Test", on_click=_set_state)
     if 'test' in st.session_state and st.session_state.test:
         st.write("Test is True")
 
